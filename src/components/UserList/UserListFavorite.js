@@ -8,7 +8,7 @@ import _ from "lodash";
 import { usePeopleFetch } from "../../hooks/usePeopleFetch";
 const UserListFavorite = ({}) => {
   const { isLoading, onUserFavoriteToggle, favorites } = usePeopleFetch();
-  const [hoveredUserId, setHoveredUserId] = useState();
+  const [hoveredUserId, setHoveredUserId] = useState(); 
 
   const handleMouseEnter = (index) => {
     setHoveredUserId(index);
